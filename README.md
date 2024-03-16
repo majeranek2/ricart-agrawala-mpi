@@ -1,5 +1,5 @@
 # ricart-agrawala-mpi
-## My implementation of the distributed mutual exclusion Ricart-Agrawala algorithm in C++
+## My implementation of the DME Ricart-Agrawala algorithm in C++
 
 The Ricart-Agrawala algorithm is a distributed algorithm used to achieve mutual exclusion in a distributed system, allowing processes to access a critical section of code without interference from other processes. Ricart-Agrawala, unlike many traditional mutual exclusion algorithms, relies on message passing to coordinate access to the critical section.
 
