@@ -3,7 +3,7 @@
 
 The Ricart-Agrawala algorithm is a distributed algorithm used to achieve mutual exclusion in a distributed system, allowing processes to access a critical section of code without interference from other processes. Ricart-Agrawala, unlike many traditional mutual exclusion algorithms, relies on message passing to coordinate access to the critical section.
 
-My implementation is based on MPI (Message Passing Interface). The assumption here is that every process has exactly one request to send. I used synchronization mechanisms in order to divide the program execution in three phases:
+My implementation is based on MPI (Message Passing Interface) and is probably the only such implementation available on the internet. The assumption here is that every process has exactly one request to send. I used synchronization mechanisms in order to divide the program execution in three phases:
   1. Each process broadcasts its timestamp to every other process.
   2. Each process receives and stores the requests.
   3. Each process waits until it can access the CS.
